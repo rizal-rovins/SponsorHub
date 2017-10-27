@@ -2,9 +2,10 @@ package com.mca.hack.sponsorhub;
 
 ;
 import android.content.Context;
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
+import android.database.Cursor;
 
 
 public class SpDbHandler extends SQLiteOpenHelper {
@@ -27,12 +28,12 @@ public class SpDbHandler extends SQLiteOpenHelper {
         String query = "create table " + Sp_TABLENAME +" ( " +
                 Sp_ID + " integer primary key autoincrement, " +
                 Sp_NAME +" text, " +
-                Sp_Amount + "text" +
-                Sp_Expectation + "text" +
+                Sp_Amount + "text," +
+                Sp_Expectation + "text," +
                 Sp_Footfall + " text, " +
                 Sp_Contact + " text, " +
-                Sp_Password + "text" +
-                Sp_Username + "text" +
+                Sp_Password + "text," +
+                Sp_Username + "text," +
                 Sp_Logo + "BLOB NOT NULL" +
                 Sp_Ratio + " text);";
 
@@ -43,6 +44,12 @@ public class SpDbHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
     }
+
+
+
+
+
+
 
 
 
