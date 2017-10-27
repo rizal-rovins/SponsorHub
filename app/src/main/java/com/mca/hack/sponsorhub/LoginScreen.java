@@ -40,6 +40,9 @@ public class LoginScreen extends AppCompatActivity {
                 if(op=='O'){
                    flag[0] =Sppasschecker(user,pass);
                    if(flag[0]==true){
+                       Intent i=new Intent(getApplicationContext(),OrganiserScreen.class);
+                       startActivity(i);
+
                        //Do your work here
                    }
                 }
@@ -47,6 +50,8 @@ public class LoginScreen extends AppCompatActivity {
                     flag[0]=Orgpasschecker(user,pass);
                     if(flag[0]==true){
                         //do your stuff here
+                        Intent i=new Intent(getApplicationContext(),SponsorScreen.class);
+                        startActivity(i);
                     }
                 }
 
@@ -57,8 +62,14 @@ public class LoginScreen extends AppCompatActivity {
         c.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            Intent i=new Intent(getApplicationContext(),RegisterActivity.class);
-            startActivity(i);
+                Intent i;
+                if(op=='S')
+                    i=new Intent(getApplicationContext(),RegisterActivity.class);
+                else
+                   i=new Intent(getApplicationContext(),RegisterActivity.class);
+
+
+                startActivity(i);
 
 
             }
