@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class OrganizerDBHandler extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="organizer.dp";
-    private static final String DATABASE_VERSION="1";
+    private static final int DATABASE_VERSION=1;
     private static final String TABLE_NAME="organizer";
 
     private static final String COLUMN_ID="ID";
@@ -26,7 +26,15 @@ public class OrganizerDBHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String query= "CREATE TABLE "+TABLE_NAME+" "
+        String query = "create table " + TABLE_NAME +" ( " +
+                COLUMN_ID + " integer primary key autoincrement, " +
+                COLUMN_ORGNAME +" text, " +
+                COLUMN_EVENTTPYE + "text, " +
+                COLUMN_USERNAME+ "text, " +
+                COLUMN_PASSWORD + "text, " +
+                ");";
+        
+        db.execSQL(query);
     }
 
     @Override
