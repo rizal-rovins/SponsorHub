@@ -20,7 +20,9 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".sponsor_details" />
         <activity android:name=".SponsorScreen" />
-        <activity android:name=".OrganiserScreen"></activity>
+        <activity android:name=".OrganiserScreen" />
+        <activity android:name=".OrganizerRegister"/>
+        <activity android:name=".activity_organiser_screen"></activity>
     </application>
 
 </manifest>

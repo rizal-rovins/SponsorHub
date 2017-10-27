@@ -25,7 +25,7 @@ public class OrganizerRegister extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_organizer_register);
         name=(EditText) findViewById(R.id.orgname);
         username=(EditText) findViewById(R.id.orgusername);
         password=(EditText) findViewById(R.id.orgpass);
