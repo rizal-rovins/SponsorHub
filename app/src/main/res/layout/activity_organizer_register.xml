@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mca.hack.sponsorhub.RegisterActivity">
+
+    <EditText
+        android:id="@+id/orgusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="100dp"
+        android:layout_below="@+id/orgname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/orgcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="185dp"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/orgpass"
+        android:layout_alignStart="@+id/orgeventtype" />
+
+    <EditText
+        android:id="@+id/orgpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="267dp"
+        android:layout_above="@+id/orgrepass"
+        android:layout_alignStart="@+id/orgcontact" />
+
+    <EditText
+        android:id="@+id/orgrepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Reconfirm Password"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="349dp"
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/orgpass" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="41dp"
+        android:text="CONFIRM"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <EditText
+        android:id="@+id/orgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/orgusername" />
+
+    <EditText
+        android:id="@+id/orgeventtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Event Type"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/orgusername"
+        android:layout_alignStart="@+id/orgusername"
+        android:layout_marginTop="24dp" />
+</android.widget.RelativeLayout>
