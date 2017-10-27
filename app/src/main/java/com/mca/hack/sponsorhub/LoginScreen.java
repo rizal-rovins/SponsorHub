@@ -1,4 +1,7 @@
 package com.mca.hack.sponsorhub;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +40,9 @@ public class LoginScreen extends AppCompatActivity {
                 if(op=='O'){
                    flag[0] =Sppasschecker(user,pass);
                    if(flag[0]==true){
+                       Intent i=new Intent(getApplicationContext(),OrganiserScreen.class);
+                       startActivity(i);
+
                        //Do your work here
                    }
                 }
@@ -44,6 +50,8 @@ public class LoginScreen extends AppCompatActivity {
                     flag[0]=Orgpasschecker(user,pass);
                     if(flag[0]==true){
                         //do your stuff here
+                        Intent i=new Intent(getApplicationContext(),SponsorScreen.class);
+                        startActivity(i);
                     }
                 }
 

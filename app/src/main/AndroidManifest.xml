@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".LoginScreen" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".sponsor_details"></activity>
+        <activity android:name=".sponsor_details" />
+        <activity android:name=".SponsorScreen" />
+        <activity android:name=".OrganiserScreen"></activity>
     </application>
 
 </manifest>
