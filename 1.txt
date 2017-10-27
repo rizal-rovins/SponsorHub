@@ -1,0 +1,5 @@
+1. Basic User Interface design.
+2. Input by user.
+3. Framing basic structure of the database.
+4. Supporting Database Management.
+5. Basic HomeScreen for Organiser and Sponsor.
