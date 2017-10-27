@@ -6,15 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import mehdi.sakout.fancybuttons.FancyButton;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button organiser,sponsor;
-        organiser=(Button)findViewById(R.id.button_organiser);
-        sponsor=(Button)findViewById(R.id.button_sponsor);
+        FancyButton organiser;
+        FancyButton sponsor;
+        organiser=(FancyButton)findViewById(R.id.button_organiser);
+        sponsor=(FancyButton)findViewById(R.id.button_sponsor);
 
         sponsor.setOnClickListener(new View.OnClickListener() {
             @Override
