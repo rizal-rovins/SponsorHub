@@ -1,4 +1,7 @@
 package com.mca.hack.sponsorhub;
+import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -79,7 +82,7 @@ public class LoginScreen extends AppCompatActivity {
     public boolean Orgpasschecker(String user, String pass) {
         OrganizerDBHandler s=new OrganizerDBHandler(this,"organizer",null,1);
         SQLiteDatabase database = s.getReadableDatabase();
-        Cursor cursor = database.query(Sp_TABLENAME, null, null, null, null, null, null);
+        Cursor cursor = database.query(s.TABLE_NAME, null, null, null, null, null, null);
         while (cursor.moveToNext()) {
             String password = cursor.getString(cursor.getColumnIndex(s.COLUMN_PASSWORD));
             String username = cursor.getString(cursor.getColumnIndex(s.COLUMN_USERNAME));
