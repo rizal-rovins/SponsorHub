@@ -1,5 +1,6 @@
 package com.mca.hack.sponsorhub;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,16 @@ public class LoginScreen extends AppCompatActivity {
             public void onClick(View v) {
                 String user=un.getText().toString();
                 String pass=un.getText().toString();
+
+            }
+        });
+        Button c=(Button)findViewById(R.id.button2);
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            Intent i=new Intent(getApplicationContext(),RegisterActivity.class);
+            startActivity(i);
+
 
             }
         });
