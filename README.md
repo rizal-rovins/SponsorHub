@@ -1,0 +1,2 @@
+# SponsorHub
+It is a platform which helps to connect sponsors with the event organisers of different colleges etc. If anyone want to get sponsorship on their events then one have to make a Ad (in which it will specify all the details like that of total number of footfall expected , benefits offered to sponsors) and it will show all the sponsors of matching interests. similarly the sponsors will also initially make their profile and post all the desired requirements with sponsorship amount in it and they will also get the best suited events for them.
