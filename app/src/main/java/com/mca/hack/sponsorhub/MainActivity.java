@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FancyButton organiser;
+
         FancyButton sponsor;
         organiser=(FancyButton)findViewById(R.id.button_organiser);
         sponsor=(FancyButton)findViewById(R.id.button_sponsor);

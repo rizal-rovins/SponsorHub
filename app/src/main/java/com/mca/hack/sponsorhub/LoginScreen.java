@@ -1,7 +1,4 @@
 package com.mca.hack.sponsorhub;
-
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +46,16 @@ public class LoginScreen extends AppCompatActivity {
                         //do your stuff here
                     }
                 }
+
+
+            }
+        });
+        Button c=(Button)findViewById(R.id.button2);
+        c.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            Intent i=new Intent(getApplicationContext(),RegisterActivity.class);
+            startActivity(i);
 
 
             }
