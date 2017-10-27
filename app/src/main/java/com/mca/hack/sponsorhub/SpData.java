@@ -18,9 +18,9 @@ public class SpData {
     public  String Expectation;
     public  String Password;
     public  String Ratio;
-    public  byte[] Logo;
+    //public  byte[] Logo;
 
-    public SpData(String name,String footfall,String contact,String amount,String username,String expectation,String password,String ratio,Bitmap logo){
+    public SpData(String name,String footfall,String contact,String amount,String username,String expectation,String password,String ratio){
         NAME=name;
         Footfall=footfall;
         Contact=contact;
@@ -29,10 +29,10 @@ public class SpData {
         Expectation=expectation;
         Password=password;
         Ratio=ratio;
-        Logo=getBytes(logo);
+      //  Logo=getBytes(logo);
     }
 
-    public static byte[] getBytes(Bitmap bitmap) {
+    /*public static byte[] getBytes(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 0, stream);
         return stream.toByteArray();
@@ -40,5 +40,5 @@ public class SpData {
     public static Bitmap getImage(byte[] image) {
         return BitmapFactory.decodeByteArray(image, 0, image.length);
     }
-
+*/
 }

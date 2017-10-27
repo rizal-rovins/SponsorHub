@@ -36,7 +36,7 @@ public class SpDbHandler extends SQLiteOpenHelper {
                 Sp_Contact + " text, " +
                 Sp_Password + "text," +
                 Sp_Username + "text," +
-                Sp_Logo + "BLOB NOT NULL" +
+          //      Sp_Logo + "BLOB NOT NULL" +
                 Sp_Ratio + " text);";
 
         sqLiteDatabase.execSQL(query);
@@ -57,7 +57,7 @@ public class SpDbHandler extends SQLiteOpenHelper {
         values.put(Sp_Username, spData.Username);
         values.put(Sp_Password, spData.Password);
         values.put(Sp_Ratio, spData.Ratio);
-        values.put(Sp_Logo, spData.Logo);
+        //values.put(Sp_Logo, spData.Logo);
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
         sqLiteDatabase.insert(Sp_TABLENAME, null, values);
     }
