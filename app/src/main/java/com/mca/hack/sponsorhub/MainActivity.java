@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         sponsor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent();
-                i.putExtra("USER_TYPE","sponsor");
+                Intent i=new Intent(getApplicationContext(),LoginScreen.class);
+                i.putExtra("USER_TYPE",'S');
                 startActivity(i);
             }
         });
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent(getApplicationContext(),LoginScreen.class);
-                i.putExtra("USER_TYPE","organiser");
+                i.putExtra("USER_TYPE",'O');
                 startActivity(i);
             }
         });
