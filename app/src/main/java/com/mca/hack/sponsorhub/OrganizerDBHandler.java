@@ -1,5 +1,6 @@
 package com.mca.hack.sponsorhub;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -33,12 +34,25 @@ public class OrganizerDBHandler extends SQLiteOpenHelper {
                 COLUMN_USERNAME+ "text, " +
                 COLUMN_PASSWORD + "text, " +
                 ");";
-        
+
         db.execSQL(query);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+
+    }
+
+    public void addData(OrganizerData od){
+        ContentValues values= new ContentValues();
+        values.put(COLUMN_ORGNAME, od.ORGANIZERNAME);
+        values.put(COLUMN_EVENTTPYE, od.EVENTTYPE);
+        values.put(COLUMN_USERNAME, od.USERNAME);
+        values.put(COLUMN_PASSWORD, od.PASSWORD);
+
+        SQLiteDatabase db= getWritableDatabase();
+        db.insert(TABLE_NAME,null, values);
+        db.close();
 
     }
 
