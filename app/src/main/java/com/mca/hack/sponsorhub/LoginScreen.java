@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import static com.mca.hack.sponsorhub.SpDbHandler.Sp_Password;
-import static com.mca.hack.sponsorhub.SpDbHandler.Sp_TABLENAME;
 
 public class LoginScreen extends AppCompatActivity {
 

@@ -34,6 +34,9 @@ public class RegisterActivity extends AppCompatActivity {
                 else
                 {
                     Intent i=new Intent(getApplicationContext(),sponsor_details.class);
+                    i.putExtra("username",coname);
+                    i.putExtra("contact",emailid);
+                    i.putExtra("PASS",pass);
                     startActivity(i);
                 }
             }
