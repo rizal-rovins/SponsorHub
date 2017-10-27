@@ -14,11 +14,11 @@ public class OrganizerDBHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION=1;
     private static final String TABLE_NAME="organizer";
 
-    private static final String COLUMN_ID="ID";
-    private static final String COLUMN_ORGNAME="ORGANIZER NAME";
-    private static final String COLUMN_EVENTTPYE="EVENT TYPE";
-    private static final String COLUMN_USERNAME="USERNAME";
-    private static final String COLUMN_PASSWORD="PASSWORD";
+    public static final String COLUMN_ID="ID";
+    public static final String COLUMN_ORGNAME="ORGANIZER NAME";
+    public static final String COLUMN_EVENTTPYE="EVENT TYPE";
+    public static final String COLUMN_USERNAME="USERNAME";
+    public static final String COLUMN_PASSWORD="PASSWORD";
 
 
     public OrganizerDBHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
