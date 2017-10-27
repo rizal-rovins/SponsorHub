@@ -66,7 +66,7 @@ public class LoginScreen extends AppCompatActivity {
                 if(op=='S')
                     i=new Intent(getApplicationContext(),RegisterActivity.class);
                 else
-                   i=new Intent(getApplicationContext(),OrganiserRegister.class);
+                   i=new Intent(getApplicationContext(),RegisterActivity.class);
 
 
                 startActivity(i);
