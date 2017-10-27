@@ -10,53 +10,15 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
+        android:layout_above="@+id/editText9"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="53dp"
         android:ems="10"
         android:hint="User Name"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="73dp"
         tools:layout_editor_absoluteY="100dp" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText3"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginBottom="53dp"
-        android:ems="10"
-        android:hint="Email ID"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="185dp" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText4"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_marginBottom="45dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="267dp" />
-
-    <EditText
-        android:id="@+id/editText4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_marginBottom="33dp"
-        android:ems="10"
-        android:hint="Reconfirm Password"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="349dp" />
 
     <Button
         android:id="@+id/button3"
@@ -69,4 +31,36 @@
         android:text="CONFIRM"
         tools:layout_editor_absoluteX="214dp"
         tools:layout_editor_absoluteY="426dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText9"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:hint="Reconfirm Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText7"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="46dp"
+        android:ems="10"
+        android:hint="EMAIL ID"
+        android:inputType="textEmailAddress" />
 </android.widget.RelativeLayout>
