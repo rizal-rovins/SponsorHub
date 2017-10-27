@@ -29,6 +29,7 @@ public class LoginScreen extends AppCompatActivity {
             public void onClick(View v) {
                 String user=un.getText().toString();
                 String pass=un.getText().toString();
+
             }
         });
     }

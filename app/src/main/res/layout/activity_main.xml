@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.mca.hack.sponsorhub.MainActivity">
 
-    <Button
+
+    <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/button_organiser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Organiser"
-        android:layout_marginTop="122dp"
+        fancy:fb_text="Organiser"
+        fancy:fb_radius="5dp"
+        fancy:fb_textSize="20sp"
+        fancy:fb_defaultColor="#3b5998"
+        android:layout_marginTop="162dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/button_sponsor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sponsor"
-        android:layout_marginTop="48dp"
+        fancy:fb_text="Sponsor"
+        fancy:fb_textSize="20sp"
+        android:layout_marginTop="60dp"
+        fancy:fb_radius="5dp"
+        fancy:fb_defaultColor="#3b5998"
         android:layout_below="@+id/button_organiser"
         android:layout_centerHorizontal="true" />
+
 
 </android.widget.RelativeLayout>
