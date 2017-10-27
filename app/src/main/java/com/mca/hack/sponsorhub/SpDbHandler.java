@@ -17,19 +17,20 @@ public class SpDbHandler extends SQLiteOpenHelper {
     public final static String Sp_Logo="Logo";
     public final static String Sp_Amount="Amount";
     public final static String Sp_Expectation="Expectation";
-
+    public final static String Sp_Password="Password";
     public SpDbHandler(Context context){
         super(context,"SponsorDetails.db",null,1);
     }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String query = "create table " + Sp_TABLENAME +" ( " +  
+        String query = "create table " + Sp_TABLENAME +" ( " +
                 Sp_ID + " integer primary key autoincrement, " +
                 Sp_NAME +" text, " +
                 Sp_Amount + "text" +
                 Sp_Expectation + "text" +
                 Sp_Footfall + " text, " +
                 Sp_Contact + " text, " +
+                Sp_Password + "text" +
                 Sp_Logo + "BLOB NOT NULL" +
                 Sp_Ratio + " text);";
 
