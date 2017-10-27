@@ -45,13 +45,18 @@ public class SpDbHandler extends SQLiteOpenHelper {
 
     }
 
-
-
-
-
-
-
-
-
-
+    public void addData(SpData spData ){
+        ContentValues values=new ContentValues();
+        values.put(Sp_NAME,spData.NAME);
+        values.put(Sp_Amount,spData.Amount);
+        values.put(Sp_Expectation,spData.Expectation);
+        values.put(Sp_Footfall,spData.Footfall);
+        values.put(Sp_Contact,spData.Contact);
+        values.put(Sp_Username,spData.Username);
+        values.put(Sp_Password,spData.Password);
+        values.put(Sp_Ratio,spData.Ratio);
+        values.put(Sp_Logo,spData.Logo);
+        SQLiteDatabase sqLiteDatabase=getWritableDatabase();
+        sqLiteDatabase.insert(Sp_TABLENAME,null,values);
+    }
 }
