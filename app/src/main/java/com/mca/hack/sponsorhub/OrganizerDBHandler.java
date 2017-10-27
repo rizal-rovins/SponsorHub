@@ -12,7 +12,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class OrganizerDBHandler extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="organizer.dp";
     private static final int DATABASE_VERSION=1;
-    private static final String TABLE_NAME="organizer";
+    public  final String TABLE_NAME="organizer";
 
     public static final String COLUMN_ID="ID";
     public static final String COLUMN_ORGNAME="ORGANIZER NAME";
