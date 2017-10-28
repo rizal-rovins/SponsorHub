@@ -19,6 +19,8 @@ public class OrganizerDBHandler extends SQLiteOpenHelper {
     public static final String COLUMN_EVENTTPYE="EVENT TYPE";
     public static final String COLUMN_USERNAME="USERNAME";
     public static final String COLUMN_PASSWORD="PASSWORD";
+    public static final String COLUMN_CONTACT="CONTACT";
+
 
 
     public OrganizerDBHandler(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
@@ -32,6 +34,7 @@ public class OrganizerDBHandler extends SQLiteOpenHelper {
                 COLUMN_ORGNAME +" text, " +
                 COLUMN_EVENTTPYE + "text, " +
                 COLUMN_USERNAME+ "text, " +
+                COLUMN_CONTACT +" text, " +
                 COLUMN_PASSWORD + "text, " +
                 ");";
 
@@ -49,6 +52,7 @@ public class OrganizerDBHandler extends SQLiteOpenHelper {
         values.put(COLUMN_EVENTTPYE, od.EVENTTYPE);
         values.put(COLUMN_USERNAME, od.USERNAME);
         values.put(COLUMN_PASSWORD, od.PASSWORD);
+        values.put(COLUMN_CONTACT, od.CONTACT);
 
         SQLiteDatabase db= getWritableDatabase();
         db.insert(TABLE_NAME,null, values);

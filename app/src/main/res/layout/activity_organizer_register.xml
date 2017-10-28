@@ -10,9 +10,9 @@
         android:id="@+id/orgusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/orgcontact"
+        android:layout_below="@+id/orgname"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="User Name"
         android:inputType="textPersonName"
@@ -64,9 +64,31 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="49dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginEnd="41dp"
         android:text="CONFIRM"
         tools:layout_editor_absoluteX="214dp"
         tools:layout_editor_absoluteY="426dp" />
+
+    <EditText
+        android:id="@+id/orgname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/orgusername"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/orgeventtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/orgcontact"
+        android:layout_below="@+id/orgusername"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Event Type"
+        android:inputType="textPersonName" />
 </android.widget.RelativeLayout>

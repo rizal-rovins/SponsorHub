@@ -19,6 +19,7 @@
         <activity android:name=".LoginScreen" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".sponsor_details"></activity>
+        <activity android:name=".OrganizerRegister" />
     </application>
 
 </manifest>
