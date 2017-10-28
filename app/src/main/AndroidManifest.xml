@@ -18,8 +18,8 @@
         </activity>
         <activity android:name=".LoginScreen" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".sponsor_details"></activity>
-        <activity android:name=".OrganizerRegister" />
+        <activity android:name=".sponsor_details"/>
+        <activity android:name=".OrganizerRegister"></activity>
     </application>
 
 </manifest>
